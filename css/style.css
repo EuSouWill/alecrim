@@ -1,7 +1,8 @@
 /* Estilos CSS */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Source Code Pro', monospace;
     background-color: rgb(35, 85, 68);
     background-repeat: no-repeat;
     background-size: cover;
