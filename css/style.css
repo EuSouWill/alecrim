@@ -1,0 +1,182 @@
+/* Estilos CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(35, 85, 68);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    /* Estilos para o elemento de navegação (se necessário) */
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Estilos para links no cabeçalho */
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #128C7E;
+}
+
+ul, li {
+    margin: 20px;
+    padding: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Adicione flex-wrap para que os itens se ajustem em telas menores */
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.jewelry-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Largura para 3 cartões por linha em telas maiores */
+    box-sizing: border-box;
+    position: relative; /* Adicione essa propriedade para posicionar o botão de forma relativa ao card */
+}
+
+/* Estilos para imagens dentro do card */
+.jewelry-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para o título dentro do card */
+.jewelry-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Estilos para o preço dentro do card */
+.jewelry-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos para o botão de chamar o WhatsApp dentro do card */
+.jewelry-card .whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 100%; /* Limite o tamanho máximo do botão para que ele não saia do card */
+}
+
+.jewelry-card .whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+footer {
+    background-color: rgba(61, 140, 114, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para os ícones de mídia social no rodapé */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Estilos para os botões */
+button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #128C7E;
+}
+
+/* Adicione uma media query para estilos móveis */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Empilhar os itens do menu verticalmente em telas menores */
+    }
+
+    .jewelry-card {
+        width: calc(50% - 20px); /* Largura para 2 cartões por linha em telas menores */
+    }
+}
+
+/* Adicione mais media queries conforme necessário para tamanhos de tela menores */
+@media (max-width: 480px) {
+    .menu {
+        /* Adicione estilos específicos para telas menores (por exemplo, 1 item por linha) */
+    }
+
+    .jewelry-card {
+        /* Adicione estilos específicos para telas menores (por exemplo, 1 cartão por linha) */
+    }
+}
